@@ -20,7 +20,7 @@ class CreateSongsTable extends Migration
             $table->string('single')->nullable();
             $table->string('cover');
             $table->date('release_date');
-            $table->bigInteger('album_id');
+            $table->timestamps();
         });
     }
 
